@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: app-manager\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-07-22 11:40+0300\n"
-"PO-Revision-Date: 2026-03-04 12:00+0000\n"
+"PO-Revision-Date: 2026-07-26 12:00+0000\n"
 "Last-Translator: denisrennes\n"
 "Language-Team: French\n"
 "Language: fr\n"
@@ -25,7 +25,9 @@ msgstr "Impossible d'installer depuis cet emplacement"
 msgid ""
 "This AppImage is already inside the install folder (%s). Move it elsewhere "
 "first to install it."
-msgstr ""
+msgstr "" 
+"Cet AppImage est déjà dans le dossier d'installation (%s). Déplacez-le "
+"ailleurs d'abord, pour l'installer."
 
 #: src/application.vala:314 src/application.vala:358 src/application.vala:370
 #: src/application.vala:1001 src/application.vala:1112
@@ -104,6 +106,8 @@ msgid ""
 "An older item named \"%s\" already exists in this location. Do you want to "
 "replace it with newer one you're copying?"
 msgstr ""
+"Un élément plus vieux nommé \"%s\" existe déjà à cet emplacement. "
+"Voulez-vous le remplacer par celui-ci, plus récent ?"
 
 #: src/application.vala:497 src/windows/drop_window.vala:449
 #, c-format
@@ -175,7 +179,7 @@ msgstr "Ignorer"
 
 #: src/application.vala:763
 msgid "Leftover portable folder found"
-msgstr "Dossier portable restant trouvé"
+msgstr "Dossier portable abandonné trouvé"
 
 #: src/application.vala:764
 #, c-format
@@ -185,6 +189,11 @@ msgid ""
 "installed while this bug was active — move anything you need out of it (e.g. "
 "AppImages under its Applications subfolder), then delete it."
 msgstr ""
+"Un dossier portable abandonné a été trouvé à côté d'AppManager (%s). "
+"AppManager ne prend pas en charge le mode portable pour lui-même. "
+"Ce dossier pourrait contenir des applications alors que ce bug existait "
+"— déplacez tout ce dont vous avez besoin (par exemple des AppImages dans "
+"le sous-dossier Applications), ensuite effacez-le."
 
 #: src/application.vala:766
 msgid "Ignore"
@@ -423,7 +432,7 @@ msgstr "L'architecture d'AppImage '%s' est incompatible avec cette machine"
 #: src/core/updater.vala:1131
 #, c-format
 msgid "App identity mismatch: expected '%s' but got '%s'"
-msgstr "Incohérence d'identité de l'application : reçu '%s' au lieu de '%s'"
+msgstr "Incohérence d'identité de l'application : '%s' attendu mais '%s' reçu"
 
 #: src/core/updater.vala:1173
 msgid ""
@@ -453,11 +462,11 @@ msgstr "Type de source zsync inconnu"
 
 #: src/core/updater.vala:1537 src/core/updater.vala:1656
 msgid "Malformed zsync file (no checksum)"
-msgstr "Fichier zsync malformé (pas de somme de contrôle)"
+msgstr "Fichier zsync malformé (pas de checksum)"
 
 #: src/core/updater.vala:1552
 msgid "Failed to compute local checksum"
-msgstr "Échec du calcul de la somme de contrôle locale"
+msgstr "Échec du calcul de la checksum locale"
 
 #: src/core/updater.vala:1633
 msgid "Unknown zsync source"
@@ -597,36 +606,38 @@ msgstr "Paramètres avancés"
 msgid ""
 "Change app icon, Startup WM Class, Keywords, $PATH or environment variables"
 msgstr ""
+"Modifier l'icône d'application, la classe Startup WM, les mots clés, $PATH "
+"ou les variables d'environnement"
 
 #: src/windows/details_window.vala:612
 msgid "App Settings"
 msgstr "Paramètres de l'application"
 
 #: src/windows/details_window.vala:641
-#, fuzzy
 msgid "Portable .home folder"
-msgstr "Portable"
+msgstr "Dossier .home portable"
 
 #: src/windows/details_window.vala:642
 msgid "Store the app's home directory in a .home folder next to the AppImage"
-msgstr "Garder le répertoire personnel de l'application dans un dossier .home à côté de l'AppImage"
+msgstr "Mettre le répertoire home de l'application dans un dossier .home à côté de l'AppImage"
 
 #: src/windows/details_window.vala:643
 msgid ".home"
-msgstr ""
+msgstr ".home"
 
 #: src/windows/details_window.vala:652
-#, fuzzy
 msgid "Portable .config folder"
-msgstr "Portable"
+msgstr "Dossier .config portable"
 
 #: src/windows/details_window.vala:653
 msgid "Store the app's config in a .config folder next to the AppImage"
 msgstr ""
+"Mettre la configuration de l'application dans un dossier .config à côté de "
+"l'AppImage"
 
 #: src/windows/details_window.vala:654
 msgid ".config"
-msgstr ""
+msgstr ".config"
 
 #: src/windows/details_window.vala:695
 #, c-format
@@ -639,11 +650,12 @@ msgid ""
 "The %s folder next to this AppImage will be permanently removed, including "
 "any data it contains."
 msgstr ""
+"Le dossier %s à côté de cet AppImage va être supprimé définitivement, y "
+"compris toutes les données qu'il contient."
 
 #: src/windows/details_window.vala:699
-#, fuzzy
 msgid "Remove Data"
-msgstr "Supprimer la variable"
+msgstr "Supprimer tout"
 
 #: src/windows/details_window.vala:717
 msgid "Environment Variables"
@@ -668,7 +680,7 @@ msgstr "Supprimer la variable"
 
 #: src/windows/details_window.vala:941
 msgid "App Name"
-msgstr "Le nom de l'application"
+msgstr "Nom de l'application"
 
 #: src/windows/details_window.vala:955
 msgid "Keywords"
@@ -680,7 +692,7 @@ msgstr "Nom de l'icône"
 
 #: src/windows/details_window.vala:975
 msgid "Startup WM Class"
-msgstr "Classe WM de démarrage"
+msgstr "Classe Startup WM"
 
 #: src/windows/details_window.vala:985
 msgid "Version"
@@ -773,7 +785,7 @@ msgstr "Mettre toutes les données à la corbeille"
 
 #: src/windows/details_window.vala:1377
 msgid "Move user data to Trash along with the app"
-msgstr "Déplacer les données utilisateur à la corbeille avec l'application"
+msgstr "Déplacer les données utilisateur à la corbeille, avec l'application"
 
 #: src/windows/details_window.vala:1393
 msgid "Keep User Data"
@@ -781,7 +793,7 @@ msgstr "Conserver les données utilisateur"
 
 #: src/windows/details_window.vala:1394
 msgid "Allow restoring personal settings &amp; content"
-msgstr "Autoriser la restauration des paramètres et du contenu personnels"
+msgstr "Autoriser la restauration des paramètres personnels"
 
 #: src/windows/details_window.vala:1427
 msgid ""
@@ -857,7 +869,7 @@ msgstr "Remplacé avec succès"
 
 #: src/windows/drop_window.vala:708
 msgid "Get Info"
-msgstr "Obtenir les informations"
+msgstr "Informations"
 
 #: src/windows/drop_window.vala:709
 msgid "Copy"
@@ -941,9 +953,8 @@ msgid "extracted"
 msgstr "extrait"
 
 #: src/windows/main_window.vala:883
-#, fuzzy
 msgid "Imported just now"
-msgstr "Mis à jour à l'instant"
+msgstr "Importé à l'instant"
 
 #: src/windows/main_window.vala:883
 msgid "Updated just now"
@@ -954,9 +965,8 @@ msgid "Installed just now"
 msgstr "Installé à l'instant"
 
 #: src/windows/main_window.vala:891
-#, fuzzy, c-format
 msgid "Imported %d min ago"
-msgstr "Mis à jour il y a %d min"
+msgstr "Importé il y a %d min"
 
 #: src/windows/main_window.vala:891
 #, c-format
@@ -969,9 +979,8 @@ msgid "Installed %d min ago"
 msgstr "Installé il y a %d min"
 
 #: src/windows/main_window.vala:899
-#, fuzzy, c-format
 msgid "Imported %d hours ago"
-msgstr "Mis à jour il y a %d heures"
+msgstr "Importé il y a %d heures"
 
 #: src/windows/main_window.vala:899
 #, c-format
@@ -984,9 +993,8 @@ msgid "Installed %d hours ago"
 msgstr "Installé il y a %d heures"
 
 #: src/windows/main_window.vala:906
-#, fuzzy, c-format
 msgid "Imported %d days ago"
-msgstr "Mis à jour il y a %d jours"
+msgstr "Importé il y a %d jours"
 
 #: src/windows/main_window.vala:906
 #, c-format
@@ -1089,11 +1097,11 @@ msgstr "Trier les applications"
 
 #: src/windows/main_window.vala:1147
 msgid "Switch to grid view"
-msgstr "Basculer à la vue vue en grille"
+msgstr "Affichage en grille"
 
 #: src/windows/main_window.vala:1150
 msgid "Switch to list view"
-msgstr "Basculer à la vue en liste"
+msgstr "Affichage en liste"
 
 #: src/windows/main_window.vala:1156
 msgid "Default"
@@ -1109,11 +1117,11 @@ msgstr "Nom (Z-A)"
 
 #: src/windows/main_window.vala:1164
 msgid "Size (smallest first)"
-msgstr "Taille (la plus petite en premier)"
+msgstr "Taille croissante"
 
 #: src/windows/main_window.vala:1165
 msgid "Size (largest first)"
-msgstr "Taille (la plus grande en premier)"
+msgstr "Taille décroissante"
 
 #: src/windows/main_window.vala:1340 src/windows/main_window.vala:1411
 msgid "Updates already running"
@@ -1129,7 +1137,7 @@ msgstr "Annulation..."
 
 #: src/windows/main_window.vala:1445
 msgid "Update check cancelled"
-msgstr "Recherche des mises à jour annulée"
+msgstr "Recherche de mises à jour annulée"
 
 #: src/windows/main_window.vala:1475
 #, c-format
@@ -1154,7 +1162,7 @@ msgstr "La mise à jour a échoué"
 
 #: src/windows/main_window.vala:1650
 msgid "Checking updates"
-msgstr "Rechercher des mises à jour"
+msgstr "Recherche des mises à jour"
 
 #: src/windows/main_window.vala:1653
 msgid "Update Apps"
@@ -1162,7 +1170,7 @@ msgstr "Mettre à jour les applications"
 
 #: src/windows/main_window.vala:1656
 msgid "Updating apps"
-msgstr "Mise à jour des applications"
+msgstr "En cours de mise à jour des applications"
 
 #: src/windows/main_window.vala:1659
 msgid "Check updates"
@@ -1257,6 +1265,8 @@ msgid ""
 "This folder is inside the install folder (%s). Select a different folder to "
 "import from."
 msgstr ""
+"Ce dossier est dans le dossier d'installation (%s). Sélectionnez un autre "
+"dossier pour importer."
 
 #: src/windows/main_window.vala:2025
 msgid "Import AppImages"
@@ -1295,11 +1305,11 @@ msgstr "Installation de %d AppImage(s)…"
 
 #: src/windows/main_window.vala:2095
 msgid "Starting…"
-msgstr "Démarrage…"
+msgstr "Démarrage en cours…"
 
 #: src/windows/main_window.vala:2104
 msgid "Cancelling…"
-msgstr "Annulation…"
+msgstr "Annulation en cours…"
 
 #: src/windows/main_window.vala:2121
 #, c-format
@@ -1312,9 +1322,8 @@ msgid "Imported %d app(s)"
 msgstr "%d application(s) importée(s)"
 
 #: src/windows/main_window.vala:2183
-#, fuzzy, c-format
 msgid "Skipped %d incompatible architecture app(s)"
-msgstr "%d application(s) déjà installée(s) ignorée(s)"
+msgstr "%d application(s) ignorée(s) pour cause d'architecture incompatible"
 
 #: src/windows/main_window.vala:2186
 #, c-format
@@ -1333,8 +1342,8 @@ msgstr "Installation"
 #: src/windows/preferences_window.vala:60
 msgid "Configure where AppImages are installed (default: ~/Applications)"
 msgstr ""
-"Configurer l'emplacement d'installation des AppImages (par défaut : ~/"
-"Applications)"
+"Configurer le dossier d'installation des AppImages (par défaut : "
+"~/Applications)"
 
 #: src/windows/preferences_window.vala:63
 msgid "Installation directory"
@@ -1363,7 +1372,7 @@ msgstr ""
 
 #: src/windows/preferences_window.vala:112
 msgid "Portable .home by default"
-msgstr "Portable .home par défaut"
+msgstr ".home portable par défaut"
 
 #: src/windows/preferences_window.vala:113
 msgid "Create a .home folder next to every newly installed AppImage"
@@ -1371,7 +1380,7 @@ msgstr "Créer un dossier .home à côté de chaque AppImage nouvellement instal
 
 #: src/windows/preferences_window.vala:117
 msgid "Portable .config by default"
-msgstr "Portable .config par défaut"
+msgstr ".config portable par défaut"
 
 #: src/windows/preferences_window.vala:118
 msgid "Create a .config folder next to every newly installed AppImage"
@@ -1379,13 +1388,15 @@ msgstr "Créer un dossier .config à côté de chaque AppImage nouvellement inst
 
 #: src/windows/preferences_window.vala:122
 msgid "Keep file extension name"
-msgstr "Conserver le nom d'extension de fichier"
+msgstr "Conserver l'extension du nom de fichier"
 
 #: src/windows/preferences_window.vala:123
 msgid ""
 "Replace spaces with underscores in installed filenames and keep "
 "the .AppImage extension"
 msgstr ""
+"Remplacer les espaces par des soulignés dans les noms de fichiers installés "
+"et garder l'extension .AppImage"
 
 #: src/windows/preferences_window.vala:135
 msgid "Automatic updates"
@@ -1393,7 +1404,7 @@ msgstr "Mises à jour automatiques"
 
 #: src/windows/preferences_window.vala:136
 msgid "Configure automatic update checking"
-msgstr "Configurer la recherche automatique des mises à jour"
+msgstr "Configurer la recherche automatique de mises à jour"
 
 #: src/windows/preferences_window.vala:142
 msgid "Open update log"
@@ -1491,7 +1502,7 @@ msgstr "Tester le jeton"
 
 #: src/windows/preferences_window.vala:274
 msgid "Verify your token works and check rate limit status"
-msgstr "Vérifiez que votre jeton fonctionne et vérifier le taux de requêtes."
+msgstr "Vérifiez que votre jeton fonctionne et vérifier la limite de requêtes."
 
 #: src/windows/preferences_window.vala:278
 msgid "Test"
@@ -1513,11 +1524,11 @@ msgstr ""
 
 #: src/windows/preferences_window.vala:360
 msgid "Select Installation Directory"
-msgstr "Sélectionner le répertoire d'installation"
+msgstr "Sélectionner le Répertoire d'Installation"
 
 #: src/windows/preferences_window.vala:427
 msgid "Invalid Path"
-msgstr "Chemin invalide"
+msgstr "Chemin Invalide"
 
 #: src/windows/preferences_window.vala:437
 msgid "Installation directory updated"
@@ -1594,7 +1605,7 @@ msgstr "Erreur de connection : %s"
 #. (itstool) path: component/id
 #: data/com.github.AppManager.metainfo.xml:3
 msgid "com.github.AppManager"
-msgstr ""
+msgstr "com.github.AppManager"
 
 #. (itstool) path: developer/name
 #. (itstool) path: component/developer_name
@@ -1612,62 +1623,62 @@ msgstr ""
 #. (itstool) path: component/metadata_license
 #: data/com.github.AppManager.metainfo.xml:10
 msgid "CC0-1.0"
-msgstr ""
+msgstr "CC0-1.0"
 
 #. (itstool) path: component/project_license
 #: data/com.github.AppManager.metainfo.xml:11
 msgid "GPL-3.0-or-later"
-msgstr ""
+msgstr "GPL-3.0-or-later"
 
 #. (itstool) path: custom/value
 #: data/com.github.AppManager.metainfo.xml:15
 msgid "© 2026 Arnis Kemlers"
-msgstr ""
+msgstr "© 2026 Arnis Kemlers"
 
 #. (itstool) path: bundle/name
 #: data/com.github.AppManager.metainfo.xml:20
 msgid "squashfs-tools (unsquashfs)"
-msgstr ""
+msgstr "squashfs-tools (unsquashfs)"
 
 #. (itstool) path: bundle/copyright
 #: data/com.github.AppManager.metainfo.xml:21
 msgid "© Phillip Lougher"
-msgstr ""
+msgstr "© Phillip Lougher"
 
 #. (itstool) path: bundle/license
 #: data/com.github.AppManager.metainfo.xml:22
 msgid "GPL-2.0-or-later"
-msgstr ""
+msgstr "GPL-2.0-or-later"
 
 #. (itstool) path: bundle/name
 #: data/com.github.AppManager.metainfo.xml:25
 msgid "DwarFS"
-msgstr ""
+msgstr "DwarFS"
 
 #. (itstool) path: bundle/copyright
 #: data/com.github.AppManager.metainfo.xml:26
 msgid "© Marcus Holland-Moritz"
-msgstr ""
+msgstr "© Marcus Holland-Moritz"
 
 #. (itstool) path: bundle/license
 #: data/com.github.AppManager.metainfo.xml:27
 msgid "GPL-3.0"
-msgstr ""
+msgstr "GPL-3.0"
 
 #. (itstool) path: bundle/name
 #: data/com.github.AppManager.metainfo.xml:30
 msgid "zsync2"
-msgstr ""
+msgstr "zsync2"
 
 #. (itstool) path: bundle/copyright
 #: data/com.github.AppManager.metainfo.xml:31
 msgid "© AppImageCommunity, © Colin Phipps"
-msgstr ""
+msgstr "© AppImageCommunity, © Colin Phipps"
 
 #. (itstool) path: bundle/license
 #: data/com.github.AppManager.metainfo.xml:32
 msgid "Artistic-2.0"
-msgstr ""
+msgstr "Artistic-2.0"
 
 #. (itstool) path: description/p
 #: data/com.github.AppManager.metainfo.xml:35
@@ -1684,27 +1695,27 @@ msgstr ""
 #. (itstool) path: component/launchable
 #: data/com.github.AppManager.metainfo.xml:37
 msgid "com.github.AppManager.desktop"
-msgstr ""
+msgstr "com.github.AppManager.desktop"
 
 #. (itstool) path: component/url
 #: data/com.github.AppManager.metainfo.xml:38
 msgid "https://github.com/kem-a/AppManager"
-msgstr ""
+msgstr "https://github.com/kem-a/AppManager"
 
 #. (itstool) path: component/url
 #: data/com.github.AppManager.metainfo.xml:39
 msgid "https://github.com/kem-a/AppManager/issues"
-msgstr ""
+msgstr "https://github.com/kem-a/AppManager/issues"
 
 #. (itstool) path: component/url
 #: data/com.github.AppManager.metainfo.xml:40
 msgid "https://github.com/kem-a/AppManager/graphs/contributors"
-msgstr ""
+msgstr "https://github.com/kem-a/AppManager/graphs/contributors"
 
 #. (itstool) path: provides/binary
 #: data/com.github.AppManager.metainfo.xml:42
 msgid "app-manager"
-msgstr ""
+msgstr "app-manager"
 
 #, c-format
 #~ msgid "Update %s?"
