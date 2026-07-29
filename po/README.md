@@ -58,7 +58,7 @@ Commit your updated `.po` file and open a pull request.
 
 To start a translation for a language that doesn't exist yet:
 
-1. Add the language code to `po/LINGUAS` (e.g. `ru`)
+1. Add the language code to `po/LINGUAS` (e.g. `fr`)
 2. Run `./scripts/translations.sh` — it will create the new `.po` from the template
 3. Then use `--export` / `--import` as described above
 
